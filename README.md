@@ -254,11 +254,11 @@ Copy the module folder inside PythonXX/Lib/site-packages or inside your applicat
 
 ## Usage
 ```python
-import TurkishStemmer
-stemmer = TurkishStemmer()
-stemmer.stem("okuldakilerden");
+>>> from TurkishStemmer import TurkishStemmer
+>>> stemmer = TurkishStemmer()
+>>> stemmer.stem("okuldakilerden")
+okul
 ```
-	okul
 
 ## Contributing
 
