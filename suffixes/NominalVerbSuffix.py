@@ -1,0 +1,23 @@
+#-*- coding: cp1254 -*-
+
+from . import Suffix
+
+S11 = Suffix("-cAsInA",    "casýna|çasýna|cesine|çesine",      None, True)
+S4  = Suffix("-sUnUz",     "sýnýz|siniz|sunuz|sünüz",          None, True)
+S14 = Suffix("-(y)mUþ",    "muþ|miþ|müþ|mýþ",                  "y",  True)
+S15 = Suffix("-(y)ken",    "ken",                              "y",  True)
+S2  = Suffix("-sUn",       "sýn|sin|sun|sün",                  None, True)
+S5  = Suffix("-lAr",       "lar|ler",                          None, True)
+S9  = Suffix("-nUz",       "nýz|niz|nuz|nüz",                  None, True)
+S10 = Suffix("-DUr",       "týr|tir|tur|tür|dýr|dir|dur|dür",  None, True)
+S3  = Suffix("-(y)Uz",     "ýz|iz|uz|üz",                      "y",  True)
+S1  = Suffix("-(y)Um",     "ým|im|um|üm",                      "y",  True)
+S12 = Suffix("-(y)DU",     "dý|di|du|dü|tý|ti|tu|tü",          "y",  True)
+S13 = Suffix("-(y)sA",     "sa|se",                            "y",  True)
+S6  = Suffix("-m",         "m",                                None, True)
+S7  = Suffix("-n",         "n",                                None, True)
+S8  = Suffix("-k",         "k",                                None, True)
+
+# The order of the enum definition determines the priority of the suffix.
+# For example, -(y)ken (S15 suffix) is  checked before -n (S7 suffix).
+VALUES = (S11,S4,S14,S15,S2,S5,S9,S10,S3,S1,S12,S13,S6,S7,S8)

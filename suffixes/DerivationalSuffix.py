@@ -1,0 +1,7 @@
+#-*- coding: cp1254 -*-
+
+from . import Suffix
+
+S1 = Suffix("-lU", "lý|li|lu|lü", None, True)
+
+VALUES = (S1, )
