@@ -1,4 +1,4 @@
-from ..suffixes import DerivationalSuffix
+﻿from ..suffixes import DerivationalSuffix
 from ..transitions import Transition
 from . import State
 

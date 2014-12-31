@@ -1,4 +1,4 @@
-# Turkish Stemmer for Python 3.x
+ï»¿# Turkish Stemmer for Python 3.x
 
 Note : Most of the documentation taken from elasticsearch-analysis-turkishstemmer project. 
 
@@ -8,9 +8,9 @@ Stemmer algorithm for Turkish language.
 
 > Turkish is an agglutinative language and has a very rich morphological
   stucture. In Turkish, you can form many different words from a single stem by
-  appending a sequence of suffixes. For example The word "doktoruymuşsunuz"
+  appending a sequence of suffixes. For example The word "doktoruymuÅŸsunuz"
   means "You had been the doctor of him". The stem of the word is "doktor" and
-  it takes three different suffixes -sU, -ymUş, and -sUnUz.
+  it takes three different suffixes -sU, -ymUÅŸ, and -sUnUz.
 
 From "Snowball Description":
 
@@ -19,7 +19,7 @@ From "Snowball Description":
 
 > We can analyze noun suffixes in Turkish in two groups. Noun suffixes (eg.
   "doktor-um" meaning "my doctor") and nominal verb suffixes (eg. "doktor-dur"
-  meaning ‘is a doctor’). The words ending with nominal verb suffixes can be
+  meaning â€˜is a doctorâ€™). The words ending with nominal verb suffixes can be
   used as verbs in sentences. There are over thirty different suffixes
   classified in these two general groups of suffixes.
 
@@ -55,14 +55,14 @@ From "An affix stripping morphological analyzer for Turkish" paper:
    the word. They follow __noun__ suffixes or the stem itself at the absence
    of noun suffixes
 
-7. In Turkish, “-lAr” suffix can be used both as a nominal verb suffix (third
+7. In Turkish, â€œ-lArâ€ suffix can be used both as a nominal verb suffix (third
    person plural present tense) and as a noun suffix (plural inflection).
 
-8. In Turkish, words do not end with consonants 'b', 'c', 'd', and 'ğ'.
+8. In Turkish, words do not end with consonants 'b', 'c', 'd', and 'ÄŸ'.
    However, when a suffix starting with a vowel is affixed to a word ending
-   with 'p', 'ç', 't' or 'k', the last consonant is transformed into 'b', 'c',
-   'd', or 'ğ' respectively. The postlude routine transforms last consonants
-   'b', 'c','d', or 'ğ'' back to 'p', 'ç', 't' or 'k', respectively, after
+   with 'p', 'Ã§', 't' or 'k', the last consonant is transformed into 'b', 'c',
+   'd', or 'ÄŸ' respectively. The postlude routine transforms last consonants
+   'b', 'c','d', or 'ÄŸ'' back to 'p', 'Ã§', 't' or 'k', respectively, after
    stemming is complete.
 
 ### Suffix Classes
@@ -84,31 +84,31 @@ Possible allomorphs are given below:
 
 Letter | Allomorph
 -------|------------
-U      | ı,i,u,ü
-C      | c,ç
+U      | Ä±,i,u,Ã¼
+C      | c,Ã§
 A      | a,e
 D      | d,t
-I      | ı,I
+I      | Ä±,I
 
 ### Nominal Verb Suffixes
 
 a/a | Suffix
 ----|------------------
-1   | –(y)Um
-2   | –sUn
-3   | –(y)Uz
-4   | –sUnUz
-5   | –lAr
-6   | –md
-7   | –n
-8   | –k
-9   | –nUz
-10  | –DUr
-11  | –cAsInA
-12  | –(y)DU
-13  | –(y)sA
-14  | –(y)mUş
-15  | –(y)ken
+1   | â€“(y)Um
+2   | â€“sUn
+3   | â€“(y)Uz
+4   | â€“sUnUz
+5   | â€“lAr
+6   | â€“md
+7   | â€“n
+8   | â€“k
+9   | â€“nUz
+10  | â€“DUr
+11  | â€“cAsInA
+12  | â€“(y)DU
+13  | â€“(y)sA
+14  | â€“(y)mUÅŸ
+15  | â€“(y)ken
 
 Suffix transition ordering for nominal verbs can be seen in References[5]
 
@@ -116,25 +116,25 @@ Suffix transition ordering for nominal verbs can be seen in References[5]
 
 a/a | Suffixes
 ----|-------------
-1   | –lAr
-2   | –(U)m
-3   | –(U)mUz
-4   | –(U)n
-5   | –(U)nUz
-6   | –(s)U
-7   | –lArI
-8   | –(y)U
-9   | –nU
-10  | –(n)Un
-11  | –(y)A
-12  | –nA
-13  | –DA
-14  | –nDA
-15  | –DAn
-16  | –nDAn
-17  | –(y)lA
-18  | –ki
-19  | –(n)cA
+1   | â€“lAr
+2   | â€“(U)m
+3   | â€“(U)mUz
+4   | â€“(U)n
+5   | â€“(U)nUz
+6   | â€“(s)U
+7   | â€“lArI
+8   | â€“(y)U
+9   | â€“nU
+10  | â€“(n)Un
+11  | â€“(y)A
+12  | â€“nA
+13  | â€“DA
+14  | â€“nDA
+15  | â€“DAn
+16  | â€“nDAn
+17  | â€“(y)lA
+18  | â€“ki
+19  | â€“(n)cA
 
 Suffix transition ordering for nouns can be seen in References[5]
 
@@ -142,15 +142,15 @@ Suffix transition ordering for nouns can be seen in References[5]
 
 a/a | Suffixes
 ----|----------
-1   | –lUk
-2   | –CU
-3   | –CUk
-4   | –lAş
-5   | –lA
-6   | –lAn
-7   | –CA
-8   | –lU
-9   | –sUz
+1   | â€“lUk
+2   | â€“CU
+3   | â€“CUk
+4   | â€“lAÅŸ
+5   | â€“lA
+6   | â€“lAn
+7   | â€“CA
+8   | â€“lU
+9   | â€“sUz
 
 Initially, we will handle only a small subset of the above suffixes which are
 more common in our domain.
@@ -166,18 +166,18 @@ vowel harmony rules for each feature.
 
 1. Vowel harmony rule for frontness: Vowels in Turkish are grouped into two
    according to where they are produced. Front produced vowels are formed at
-   the front of the mouth ('e', 'i', 'ö', 'ü') and back produced vowels are
-   produced nearer to throat ('a', 'ı', 'o', 'u'). According to the vowel
+   the front of the mouth ('e', 'i', 'Ã¶', 'Ã¼') and back produced vowels are
+   produced nearer to throat ('a', 'Ä±', 'o', 'u'). According to the vowel
    harmony rule, words cannot contain both front and back vowels. This is one
    of the reasons why suffixes containing vowels can take different forms to
    obey vowel harmony.
 
 2. Vowel harmony rule for roundness: Vowels in Turkish are grouped into two
-   according to whether lips are rounded while producing it. 'o', 'ö', 'u' and
-   'ü' are rounded vowels whereas 'a', 'e', 'ı' and 'i' are unrounded.
+   according to whether lips are rounded while producing it. 'o', 'Ã¶', 'u' and
+   'Ã¼' are rounded vowels whereas 'a', 'e', 'Ä±' and 'i' are unrounded.
    According to the vowel harmony rules, if the vowel of a syllable is
    unrounded, the following vowel is unrounded as well. If the vowel of a
-   syllable is rounded, the following vowels are 'a', 'e', 'u' or 'ü'.
+   syllable is rounded, the following vowels are 'a', 'e', 'u' or 'Ã¼'.
 
 ### Last consonant
 
@@ -186,7 +186,7 @@ suffixes, if the word ends with a vowel, a consonant is inserted between the
 rest of the word and the suffix. These merging consonants can be 'y', 'n' or
 's'. When a merging consonant can be inserted before the suffix, the
 representation of the suffix starts with the optional consonant surrounded by
-paranthesis (eg. –(y)Um, -(n)cA). For these kinds of suffixes, if existence of
+paranthesis (eg. â€“(y)Um, -(n)cA). For these kinds of suffixes, if existence of
 a merging consonant is considered, the candidate stem is checked whether it
 ends with a vowel.
 
@@ -199,9 +199,9 @@ suffix are really a part of the stem. In such a case, cursor is not advanced
 to prevent over-stemming. The last case can occur especially when the stem
 originates from another language like in 'lityum' (meaning the element
 Lithium). If the check for vowel harmony was not made, the word would be
-stemmed to 'lit', for '–(y)Um' would be treated as a suffix affixed to it. But
+stemmed to 'lit', for 'â€“(y)Um' would be treated as a suffix affixed to it. But
 according to morphological rules of Turkish, the final word would be 'litim',
-not 'lityum' if 'lit' were really the stem of the word and the suffix '–(y)Um'
+not 'lityum' if 'lit' were really the stem of the word and the suffix 'â€“(y)Um'
 were affixed to it. So detecting 'lit' as the stem of the word would be an over
 -stemming.
 
@@ -210,7 +210,7 @@ were affixed to it. So detecting 'lit' as the stem of the word would be an over
 Similar to merging consonants, there are merging vowels for some suffixes
 starting with consonants. They can be preceded by merging vowels like in '-(U)
 mUz' suffix when they are affixed to a stem ending with a consonant. In such a
-case, a U vowel ('ı', 'i', 'u' or 'ü' depending on vowel harmony) is inserted
+case, a U vowel ('Ä±', 'i', 'u' or 'Ã¼' depending on vowel harmony) is inserted
 between the stem and real suffix (e.g. '-mUz') for ease of pronunciation.
 
 ### Some examples
@@ -219,13 +219,13 @@ Word / Analysis                | Meaning / Stem
 ------------------------------ |--------------------------------
 Kalelerimizdekilerden          | From the ones at one of our castles
 Kale-lAr-UmUz-DA-ki-lAr-DAn    | Kale
-Çocuğuymuşumcasına             | As if I were her child
-Çocuk-(s)U-(y)mUş-(y)Um-cAsInA | Çocuk
+Ã‡ocuÄŸuymuÅŸumcasÄ±na             | As if I were her child
+Ã‡ocuk-(s)U-(y)mUÅŸ-(y)Um-cAsInA | Ã‡ocuk
 Kedileriyle                    | With their cats
 Kedi-lAr-(s)U-(y)lA            | Kedi
-Çocuklarımmış                  | Someone told me that they were my children
-çocuk-lAr-(U)m-(y)mUş          | Çocuk
-Kitabımızdı                    | It was our book
+Ã‡ocuklarÄ±mmÄ±ÅŸ                  | Someone told me that they were my children
+Ã§ocuk-lAr-(U)m-(y)mUÅŸ          | Ã‡ocuk
+KitabÄ±mÄ±zdÄ±                    | It was our book
 kitap-UmUz-(y)DU               | Kitap
 
 ## Future Work

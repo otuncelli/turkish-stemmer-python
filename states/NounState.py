@@ -1,4 +1,4 @@
-from ..suffixes import NounSuffix
+﻿from ..suffixes import NounSuffix
 from ..transitions import Transition
 from . import State
 

@@ -1,4 +1,4 @@
-from ..transitions import Transition
+﻿from ..transitions import Transition
 from ..suffixes import *
 
 __all__ = ["State"]

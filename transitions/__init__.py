@@ -1,4 +1,4 @@
-__all__ = ["Transition"]
+﻿__all__ = ["Transition"]
 
 class Transition(object):
     def __init__(self, startState, nextState, word, suffix, marked):

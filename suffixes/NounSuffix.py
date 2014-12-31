@@ -1,25 +1,25 @@
-#-*- coding: cp1254 -*-
+ï»¿#-*- coding: utf-8 -*-
 
 from . import Suffix
 
 S16 = Suffix("-nDAn",     "ndan|ntan|nden|nten",      None,       True)
-S7  = Suffix("-lArI",     "larý|leri",                None,       True)
-S3  = Suffix("-(U)mUz",   "mýz|miz|muz|müz",          "ý|i|u|ü",  True) 
-S5  = Suffix("-(U)nUz",   "nýz|niz|nuz|nüz",          "ý|i|u|ü",  True) 
+S7  = Suffix("-lArI",     "larÄ±|leri",                None,       True)
+S3  = Suffix("-(U)mUz",   "mÄ±z|miz|muz|mÃ¼z",          "Ä±|i|u|Ã¼",  True) 
+S5  = Suffix("-(U)nUz",   "nÄ±z|niz|nuz|nÃ¼z",          "Ä±|i|u|Ã¼",  True) 
 S1  = Suffix("-lAr",      "lar|ler",                  None,       True)
 S14 = Suffix("-nDA",      "nta|nte|nda|nde",          None,       True)
 S15 = Suffix("-DAn",      "dan|tan|den|ten",          None,       True)
 S17 = Suffix("-(y)lA",    "la|le",                    "y",        True)
-S10 = Suffix("-(n)Un",    "ýn|in|un|ün",              "n",        True)
+S10 = Suffix("-(n)Un",    "Ä±n|in|un|Ã¼n",              "n",        True)
 S19 = Suffix("-(n)cA",    "ca|ce",                    "n",        True)
-S4  = Suffix("-Un",       "ýn|in|un|ün",              None,       True)
-S9  = Suffix("-nU",       "ný|ni|nu|nü",              None,       True) 
+S4  = Suffix("-Un",       "Ä±n|in|un|Ã¼n",              None,       True)
+S9  = Suffix("-nU",       "nÄ±|ni|nu|nÃ¼",              None,       True) 
 S12 = Suffix("-nA",       "na|ne",                    None,       True)
 S13 = Suffix("-DA",       "da|de|ta|te",              None,       True)
 S18 = Suffix("-ki",       "ki",                       None,       False)
-S2  = Suffix("-(U)m",     "m",                        "ý|i|u|ü",  True)
-S6  = Suffix("-(s)U",     "ý|i|u|ü",                  "s",        True)
-S8  = Suffix("-(y)U",     "ý|i|u|ü",                  "y",        True)
+S2  = Suffix("-(U)m",     "m",                        "Ä±|i|u|Ã¼",  True)
+S6  = Suffix("-(s)U",     "Ä±|i|u|Ã¼",                  "s",        True)
+S8  = Suffix("-(y)U",     "Ä±|i|u|Ã¼",                  "y",        True)
 S11 = Suffix("-(y)A",     "a|e",                      "y",        True)
 
 # The order of the enum definition determines the priority of the suffix.

@@ -1,4 +1,4 @@
-import re
+﻿import re
 
 __all__ = ["Suffix"]
 

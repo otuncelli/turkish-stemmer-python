@@ -1,7 +1,7 @@
-#-*- coding: cp1254 -*-
+ï»¿#-*- coding: utf-8 -*-
 
 from . import Suffix
 
-S1 = Suffix("-lU", "lý|li|lu|lü", None, True)
+S1 = Suffix("-lU", "lÄ±|li|lu|lÃ¼", None, True)
 
 VALUES = (S1, )

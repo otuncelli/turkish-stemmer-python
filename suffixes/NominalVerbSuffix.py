@@ -1,18 +1,18 @@
-#-*- coding: cp1254 -*-
+ï»¿#-*- coding: utf-8 -*-
 
 from . import Suffix
 
-S11 = Suffix("-cAsInA",    "casýna|çasýna|cesine|çesine",      None, True)
-S4  = Suffix("-sUnUz",     "sýnýz|siniz|sunuz|sünüz",          None, True)
-S14 = Suffix("-(y)mUþ",    "muþ|miþ|müþ|mýþ",                  "y",  True)
+S11 = Suffix("-cAsInA",    "casÄ±na|Ã§asÄ±na|cesine|Ã§esine",      None, True)
+S4  = Suffix("-sUnUz",     "sÄ±nÄ±z|siniz|sunuz|sÃ¼nÃ¼z",          None, True)
+S14 = Suffix("-(y)mUÅŸ",    "muÅŸ|miÅŸ|mÃ¼ÅŸ|mÄ±ÅŸ",                  "y",  True)
 S15 = Suffix("-(y)ken",    "ken",                              "y",  True)
-S2  = Suffix("-sUn",       "sýn|sin|sun|sün",                  None, True)
+S2  = Suffix("-sUn",       "sÄ±n|sin|sun|sÃ¼n",                  None, True)
 S5  = Suffix("-lAr",       "lar|ler",                          None, True)
-S9  = Suffix("-nUz",       "nýz|niz|nuz|nüz",                  None, True)
-S10 = Suffix("-DUr",       "týr|tir|tur|tür|dýr|dir|dur|dür",  None, True)
-S3  = Suffix("-(y)Uz",     "ýz|iz|uz|üz",                      "y",  True)
-S1  = Suffix("-(y)Um",     "ým|im|um|üm",                      "y",  True)
-S12 = Suffix("-(y)DU",     "dý|di|du|dü|tý|ti|tu|tü",          "y",  True)
+S9  = Suffix("-nUz",       "nÄ±z|niz|nuz|nÃ¼z",                  None, True)
+S10 = Suffix("-DUr",       "tÄ±r|tir|tur|tÃ¼r|dÄ±r|dir|dur|dÃ¼r",  None, True)
+S3  = Suffix("-(y)Uz",     "Ä±z|iz|uz|Ã¼z",                      "y",  True)
+S1  = Suffix("-(y)Um",     "Ä±m|im|um|Ã¼m",                      "y",  True)
+S12 = Suffix("-(y)DU",     "dÄ±|di|du|dÃ¼|tÄ±|ti|tu|tÃ¼",          "y",  True)
 S13 = Suffix("-(y)sA",     "sa|se",                            "y",  True)
 S6  = Suffix("-m",         "m",                                None, True)
 S7  = Suffix("-n",         "n",                                None, True)

@@ -1,4 +1,4 @@
-from ..suffixes import NominalVerbSuffix
+﻿from ..suffixes import NominalVerbSuffix
 from ..transitions import Transition
 from . import State
 
