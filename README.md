@@ -1,4 +1,4 @@
-﻿# Turkish Stemmer for Python 3.x
+﻿# Turkish Stemmer for Python
 
 Note : Most of the documentation taken from elasticsearch-analysis-turkishstemmer project. 
 
