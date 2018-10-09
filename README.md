@@ -1,6 +1,6 @@
 ﻿# Turkish Stemmer for Python
 
-Note : Most of the documentation taken from elasticsearch-analysis-turkishstemmer project. 
+Note : Most of the documentation taken from [elasticsearch-analysis-turkishstemmer](https://github.com/skroutz/elasticsearch-analysis-turkishstemmer) project. 
 
 Stemmer algorithm for Turkish language.
 
@@ -250,6 +250,15 @@ kitap-UmUz-(y)DU               | Kitap
 
 ## Installation
 
+```
+pip install TurkishStemmer
+```
+or
+```
+python setup.py install
+```
+or
+
 Copy the module folder inside PythonXX/Lib/site-packages or inside your application directory.
 
 ## Usage
@@ -262,7 +271,7 @@ okul
 
 ## Contributing
 
-1. Fork it ( `http://github.com/<my-github-username>/turkishstemmer-python/fork` )
+1. Fork it ( `https://github.com/<my-github-username>/turkish-stemmer-python/fork` )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -270,4 +279,4 @@ okul
 
 ## License
 
-turkishstemmer-python is licensed under the Apache Software License, Version 2.0.
+turkish-stemmer-python is licensed under the Apache Software License, Version 2.0.
