@@ -6,7 +6,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name='TurkishStemmer',
-    version='1.2',
+    version='1.3',
     description='Turkish Stemmer',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -14,5 +14,5 @@ setuptools.setup(
     author_email='abdullahanefi16@gmail.com',
     url='https://github.com/hanefi/turkish-stemmer-python',
     packages=setuptools.find_packages(),
-    package_data={'':['**/*.txt'],},
+    package_data={'':['*.txt'],},
    )
