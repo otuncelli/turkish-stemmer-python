@@ -1,8 +1,6 @@
 ﻿# Turkish Stemmer for Python
 
-Note : Most of the documentation taken from [elasticsearch-analysis-turkishstemmer](https://github.com/skroutz/elasticsearch-analysis-turkishstemmer) project. 
-
-Stemmer algorithm for Turkish language.
+Stemmer algorithm for Turkish language. Ported from [elasticsearch-analysis-turkishstemmer](https://github.com/skroutz/elasticsearch-analysis-turkishstemmer). 
 
 ## Introduction to Turkish language morphology
 
